@@ -1,0 +1,169 @@
+.body{
+  background-color: rgb(240, 240, 240);
+}
+
+.logo{
+/*   background-color: rgb(24, 18, 36); */
+  font-size: 3em;
+  color: red;
+  text-align: center;
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+.nav{
+/*   background-color: rgb(49, 49, 49); */
+  border-top: .1em solid black;
+  border-bottom: .1em solid black;
+/*   color: rgb(240,240,240); */
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.main{
+  
+  float: left;
+  width: 80%;
+}
+
+.big-story{
+  float: left;
+  width: 99%;
+  border: .1em solid rgb(49,49,49);
+
+}
+
+.big-image{
+  float: left;
+  width: 100%
+}
+
+.main-text{
+  background-image: linear-gradient(rgb(240, 240, 240), grey) ;
+  display: inline-block; 
+  width: 100%;
+  padding-top: .1em;
+  padding-bottom: .1em;
+}
+
+.story{
+  background-image: linear-gradient(rgb(240, 240, 240), grey) ;
+  border: .1em solid rgb(49,49,49);
+  float: left;
+  width: 99%
+  
+}
+
+.image{
+  float: left;
+  width: 50%;
+  height: auto;
+}
+
+.story-text{
+
+  float: right;
+  padding-top: 1em;
+  width: 50%;
+  height: 100%;
+}
+
+.text-bigger{
+  font-size: 2em;
+}
+
+.aside{
+  float: right;
+  width: 20%;
+  font-size: 1em;
+}
+
+.subs{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  float: right;
+  width: 100%;
+  background-color: red;
+  text-align: center;
+}
+
+.subs-font{
+  font-size: 1.8em;
+}
+
+.picks-title{
+  float: right;
+  width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  background-color: rgb(49, 49, 49);
+  color: aliceblue;
+  text-align: center;
+  border-top: .1em solid white;
+  border-bottom: .1em solid white;
+}
+
+.picks{
+  float: right;
+  width: 100%;
+  height: 100%;
+  border: .1em solid rgb(49,49,49);
+}
+
+.footer{
+  display: inline-block;
+  width: 100%;
+  border-top: .1em solid black;
+  border-bottom: .1em solid black;
+}
+
+.footer-title{
+  font-size: 2em;
+  text-align: center;
+
+}
+
+.center{
+  text-align: center;
+}
+
+.social{
+
+  width: 2%;
+  height: auto;
+}
+
+.social-fb{
+  padding-left: .5%;
+  float: center;
+  width: 1%;
+  height: auto;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-6 {
+  float: left;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.42%;
+}
+
+.col-3 {
+  width: 24.5%;
+}
+
+.col-4 {
+  width: 32.33%;  
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
