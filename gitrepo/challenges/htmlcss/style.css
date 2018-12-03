@@ -1,0 +1,47 @@
+.body{
+  background-color: rgb(210,210,210);
+}
+
+.main{
+  float: right;
+  width: 75%;
+  text-align: center;
+}
+
+.title{
+  font-size: 3em;
+}
+
+.header{
+  font-size: 2em;
+}
+
+.text{
+  text-align: left;
+  padding: 1%;
+}
+
+.gallery{
+  float: left;
+  width: 32%;
+}
+
+.image{
+  float: left;
+  width: 99%;
+  height: auto;
+  padding: 1%;
+}
+
+
+
+
+.aside{
+  float: center;
+  width 22%;
+  text-align: center;
+}
+
+.page{
+  font-size: 2em;
+}
