@@ -1,0 +1,33 @@
+// index.scss
+
+// variables
+$green: rgb(0,100,0);
+
+body {
+  color: $green;
+}
+
+// mixins (what we normally call functions)
+@mixin background() {
+  background-color: rgb(200, 100, 0);
+}
+
+body {
+  @include background();
+}
+
+// nesting
+main {
+  section {
+    font-size: 20px;
+
+    p {
+      font-weight: bold
+    }
+  }
+}
+
+
+
+
+

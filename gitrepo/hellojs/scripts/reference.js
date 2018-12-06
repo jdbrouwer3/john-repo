@@ -1,0 +1,10 @@
+// reference.js
+
+exports = function salutation() {
+  var t = (new Date()).getHours();
+  return t < 12 ? 'morning' : t < 18 ? 'afternoon' : 'evening';
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
