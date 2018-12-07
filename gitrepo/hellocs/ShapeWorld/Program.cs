@@ -9,9 +9,11 @@ namespace ShapeWorld
         {
           // var p = new Program(); //makes it so there can only be 1 PlayWithShape
           // p.PlayWithShape();
-          (new Program()).PlayWithShape(); //same as previous 2 lines, but in shorter syntax
+          // (new Program()).PlayWithShape(); //same as previous 2 lines, but in shorter syntax
           //Program.PlayWithShape(); //with static applied
           //PlayWithShape(); //with static applied
+
+          PlayWithShapeRectangle();
         }
 
         private void PlayWithShape()
@@ -33,10 +35,39 @@ namespace ShapeWorld
 
           s1.SideA = 10;
 
-          System.Console.WriteLine(s1.SideA); //getter
-          System.Console.WriteLine(s2.GetSides());
-          System.Console.WriteLine(s3.GetSides());
-          System.Console.WriteLine(rectangle.GetSides());
+          System.Console.WriteLine(s1.Edges); //getter
+          System.Console.WriteLine(s2.Edges());
+          System.Console.WriteLine(s3.AnotherEdges());
+          System.Console.WriteLine(rectangle.YetAnotherEdges());
         }
+
+      private static void PlayWithShapeRectangle()
+      {
+        var s1 = new Shape(4);
+        var r1 = new Rectangle();
+
+        Shape s2 = new Rectangle(); // s2 is a Rectangle. Rectangle is a Shape. But s2 is not a Shape.
+        // Rectangle r2 = new Shape(4); // wont work because not all Shapes are Rectangles.
+
+        System.Console.WriteLine(s1.Edges);
+        // System.Console.WriteLine(r1.Edges);
+        // System.Console.WriteLine(s2.Edges);
+        System.Console.WriteLine(r1.Area());
+        System.Console.WriteLine(r1.Area2());
+
+      }
+      private static void PlayWithShape2()
+      {
+        Shape s1;
+        Shape s2 = new Rectangle();
+        Shape s3 = new Square();
+
+        s1 = s2;
+        s2 = s3;
+
+        System.Console.WriteLine(s1.GetType());
+        System.Console.WriteLine(s2.GetType());
+        System.Console.WriteLine(s3.GetType());
+      }
     }
 }

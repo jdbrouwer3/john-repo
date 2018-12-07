@@ -1,21 +1,56 @@
 namespace ShapeWorld.Models
 {
   //type:
-  public class Shape
+  public abstract class Shape // made abstract because Shape is unreal - it is only a concept.
   {
     //field: a variable at the class scope
-    protected int sides = 0;
-    private int myside;
+    protected int edges = 0;
 
-    //property
-    public int SideA { get ; private set; } // or completely leaving set out - meaning the constructor sets it and it absolutely is never touched again.
+    //properties
+    public int Edges { get ; private set; } // can be set only by other class members
+    public int AnotherEdges { get; } //can be set only by the constructor
 
-    public int SideB { get; } //can be set only by the constructo
+
+  public int YetAnotherEdges
+  {
+    get
+    {
+      return _edges;
+    }
+
+    set
+    {
+      _edges = value;
+    }
+  }
 
     //constructor
-    internal Shape(int side) //does not have a full signature.
+    protected Shape()
     {
-      sides = side; /////////////////////////////////check if capitalization is correct
+
+    }
+    internal Shape(int edges) //does not have a full signature.
+    {
+      Edges = edges;
+      // AnotherEdges = edges;
+      // YetAnotherEdges = edges;
+    }
+
+    public virtual double Area() // by making it virtual, it gives others possibility to override this
+    {
+      return 1;
+    }
+
+    public double Area2()
+    {
+      return 1;
+    }
+
+    public abstract double Area3(); //abstract can have no content. There is no default implementation.
+
+    public virtual double Perimeter()
+    {
+      return 1;
     }
 
     // //method
