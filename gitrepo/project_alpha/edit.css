@@ -2,14 +2,28 @@
   background-color: rgb(240, 240, 240);
 }
 
-.login
+.login{
+  display: block;
+  text-align: right;
+  padding-right: 10%;
+  background-color: rgb(170, 0, 0);
+  color: white;
+}
+
+.login-page{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 
 .logo{
   font-size: 4em;
-  color: red;
-  text-align: center;
+  color: blue;
+  /* text-align: center; */
   padding-top: .3em;
   padding-bottom: .3em;
+  display: flex;
+  justify-content: center;
 }
 
 .nav{
@@ -31,6 +45,14 @@
 .main{
   float: left;
   width: 60%;
+}
+
+.subscribe-main{
+  float: left;
+  width: 60%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-top: .1em solid rgb(49,49,49);
 }
 
 .big-story{
@@ -149,30 +171,11 @@
   height: auto;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-6 {
-  float: left;
+a:link{
+  color: blue;
 }
 
-.col-1 {
-  width: 8.33%;
-}
-
-.col-2 {
-  width: 16.42%;
-}
-
-.col-3 {
-  width: 24.5%;
-}
-
-.col-4 {
-  width: 32.33%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-12 {
-  width: 100%;
+a:hover{
+  text-decoration: none;
+  color: blue;
 }
