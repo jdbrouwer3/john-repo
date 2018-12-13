@@ -1,7 +1,8 @@
+using ShapeWorld.Interfaces;
 namespace ShapeWorld.Models
 {
   //type:
-  public abstract class Shape // made abstract because Shape is unreal - it is only a concept.
+  public abstract class Shape : IShape // made abstract because Shape is unreal - it is only a concept.
   {
     //field: a variable at the class scope
     protected int edges = 0;

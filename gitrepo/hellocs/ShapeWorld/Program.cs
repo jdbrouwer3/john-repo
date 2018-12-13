@@ -13,7 +13,8 @@ namespace ShapeWorld
           //Program.PlayWithShape(); //with static applied
           //PlayWithShape(); //with static applied
 
-          PlayWithShapeRectangle();
+          // PlayWithShapeRectangle();
+          PlayWithInterface();
         }
 
         private void PlayWithShape()
@@ -71,3 +72,40 @@ namespace ShapeWorld
       }
     }
 }
+
+private static void PlayWithInterface()
+{
+  var r = Rectangle();
+  var c = Circle();
+
+  System.Console.WriteLine(r.Perimeter());
+  System.Console.WriteLine(c.Perimeter());
+}
+
+private static void PlayWithExcpetion()
+{
+  var cu = new Cube();
+
+  try
+  {
+    throw new Exception("we did it.");
+    System.Console.WriteLine(cu.Volume());
+  }
+  catch(NotImplementedException nie)
+  {
+    System.Console.WriteLine("volume cannot be computed at this time... we busy!!!" + nie.Message);
+  }
+  catch(Exception e)
+  {
+    throw e;
+    throw;
+    System.Console.WriteLine(string.Format("{1} {0}", "system down. please try again at another time. ", e.Message);
+  }
+  finally
+  {
+    GC.Collect(); //Garbage collector
+    System.Console.WriteLine("finally... as always.");
+  }
+}
+
+

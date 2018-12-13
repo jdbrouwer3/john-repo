@@ -1,6 +1,7 @@
+using ShapeWorld.Interfaces;
 namespace ShapeWorld.Models
 {
-  public class Rectangle : Shape
+  public class Rectangle : Shape, IShape3d
   {
     public Rectangle() {}
     public Rectangle(string name) {}

@@ -1,10 +1,7 @@
 
 
-function storeUsername() {
+function storeUsername() { 
   sessionStorage.setItem("username", document.getElementById("username").value)
-
-  sessionStorage.setItem("password", "password")
-
   location.href = "index.html";
 }
 
@@ -15,6 +12,24 @@ window.onload = function printUsername() {
   } else {
     document.getElementById("printUsername").innerText = ("Welcome, " + x);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // sessionStorage.setItem("password", "password")
 
   // if (location == "index.html"){
   //   location = "index.html";
