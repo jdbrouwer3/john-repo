@@ -1,0 +1,181 @@
+.body{
+  background-color: rgb(240, 240, 240);
+}
+
+.login{
+  display: block;
+  text-align: right;
+  padding-right: 10%;
+  background-color: rgb(170, 0, 0);
+  color: white;
+}
+
+.login-page{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo{
+  font-size: 4em;
+  color: blue;
+  /* text-align: center; */
+  padding-top: .3em;
+  padding-bottom: .3em;
+  display: flex;
+  justify-content: center;
+}
+
+.nav{
+  margin: auto;
+  width: 60%;
+  display: flex ;
+  justify-content: space-around;
+  font-size: 2em;
+}
+
+.about{
+  border: .5em solid rgb(170, 0, 0);
+  display: inline;
+  text-align: center;
+  float: left;
+  width: 20%;
+}
+
+.main{
+  float: left;
+  width: 60%;
+}
+
+.subscribe-main{
+  float: left;
+  width: 60%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-top: .1em solid rgb(49,49,49);
+}
+
+.big-story{
+  float: left;
+  width: 100%;
+  border: .1em solid rgb(49,49,49);
+  margin-bottom: .1em;
+}
+
+.big-image{
+  float: left;
+  width: 100%
+}
+
+.main-text{
+  /* background-image: linear-gradient(rgb(240, 240, 240), grey) ; */
+  display: inline-block;
+  width: 100%;
+  padding-top: .1em;
+  padding-bottom: .1em;
+}
+
+.story{
+  /* background-image: linear-gradient(rgb(240, 240, 240), grey) ; */
+  border: .1em solid rgb(49,49,49);
+  float: left;
+  /* display: flex;
+  align-items: center; */
+  width: 100%;
+  margin-bottom: .1em;
+}
+
+.image{
+  float: left;
+  width: 50%;
+  height: auto;
+}
+
+.story-text{
+
+  float: right;
+  padding-top: 1em;
+  width: 50%;
+  height: 100%;
+}
+
+.text-bigger{
+  font-size: 2em;
+}
+
+.aside{
+  float: right;
+  width: 20%;
+  font-size: 1em;
+}
+
+.subs{
+  /* padding-top: 1em;
+  padding-bottom: 1em; */
+  float: left;
+  width: 100%;
+  /* background-color: red;
+  text-align: center; */
+}
+
+.subs-font{
+  font-size: 1.8em;
+}
+
+.picks-title{
+  float: right;
+  width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  background-color: rgb(49, 49, 49);
+  color: aliceblue;
+  text-align: center;
+  border-top: .1em solid white;
+  border-bottom: .1em solid white;
+}
+
+.picks{
+  float: right;
+  width: 100%;
+  height: 100%;
+  border: .1em solid rgb(49,49,49);
+}
+
+.footer{
+  display: inline-block;
+  width: 100%;
+  border-top: .1em solid black;
+  border-bottom: .1em solid black;
+}
+
+.footer-title{
+  font-size: 2em;
+  text-align: center;
+
+}
+
+.center{
+  text-align: center;
+}
+
+.social{
+
+  width: 2%;
+  height: auto;
+}
+
+.social-fb{
+  padding-left: .5%;
+  float: center;
+  width: 1%;
+  height: auto;
+}
+
+a:link{
+  color: blue;
+}
+
+a:hover{
+  text-decoration: none;
+  color: blue;
+}
