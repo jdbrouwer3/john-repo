@@ -12,7 +12,7 @@ window.onload = function printUsername() {
   } else {
     document.getElementById("printUsername").innerText = ("Welcome, " + x);
   }
-
+}
 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -59,7 +59,7 @@ window.onload = function printUsername() {
   //   }
   // }
 
-}
+
 
 
 

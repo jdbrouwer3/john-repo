@@ -23,15 +23,16 @@
     <div>
       <h2>Create an Account:</h2>
       <label for="username">Username:</label><br>
-      <input id="username" type="text" placeholder="Create Username" name="username" required>
+      <input id="setUsername" type="text" placeholder="Create Username" name="username" required>
       <br>
       <label for="password">Password:</label><br>
-      <input id="password" type="password" placeholder="Create Password" name="password" required>
+      <input id="setPassword" type="password" placeholder="Create Password" name="password" required>
       <br>
       <label for="password">Confirm Password:</label><br>
       <input id="confirmPassword" type="password" placeholder="Comfirm Password" name="password" required>
       <br>
-      <button onclick= "storeUsername()" type="button">Sign Up</button>
+      <button id="signUpBtn" type="button">Sign Up</button>
+      <div id="pwAlert" ></div>
     </div>
   </form>
 
