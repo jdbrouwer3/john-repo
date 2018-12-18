@@ -2,6 +2,31 @@ import { appGet, appPost } from "./scripts/addUser.js";
 
 'use strict'
 
+var signUpButton = document.querySelector('#signUpBtn');
+signUpButton.addEventListener('click', () => {
+  var un = document.querySelector('#setUsername').value;
+  var pw = document.querySelector('#confirmPassword').value;
+  appPost('https://localhost:5001/api/user', { username: un , password: pw }, (data) => {
+    document.querySelector('#newUsername').innerHTML = data[data.length - 1].username;
+  });
+});
+
+// var directAfterSignUp = document.querySelector('#signUpBtn');
+// directAfterSignUp.addEventListener('click', () => {
+//   window.location.replace('login.html');
+// });
+
+
+// location.href = "login.html";
+
+// signUpButton.addEventListener('click', () => {
+//   window.location.replace('login.html')
+// });
+
+// function redirect() {
+
+// }
+
 // appGet('https://localhost:5001/api/user/', (data) => {
 //   document.querySelector('#newUsername').innerHTML = data[data.length - 1].username;
 // });
@@ -16,18 +41,6 @@ import { appGet, appPost } from "./scripts/addUser.js";
 //   document.querySelector('#newUsername').innerHTML = data[data.length - 1].username;
 // })
 
-var signUpButton = document.querySelector('#signUpBtn');
-signUpButton.addEventListener('click', () => {
-  var un = document.querySelector('#setUsername').value;
-  var pw = document.querySelector('#confirmPassword').value;
-  appPost('https://localhost:5001/api/user', { username: un , password: pw }, (data) => {
-    document.querySelector('#newUsername').innerHTML = data[data.length - 1].username;
-  });
-});
-
-
-
-
 // trying with query selector
 // var signUpForm = document.querySelector('#signUpBtn');
 // signUpForm.addEventListener('button', appPost());
@@ -36,7 +49,8 @@ signUpButton.addEventListener('click', () => {
 //   document.querySelector('#newUsername').innerHTML = data[data.length - 1].username;
 // })
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//old stuff
 // function storeUsername() {
 //   sessionStorage.setItem("username", document.getElementById("username").value)
 //   location.href = "index.html";
