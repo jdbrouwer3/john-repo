@@ -8,22 +8,32 @@ function storeUsername() {
 window.onload = function printUsername() {
   var x = sessionStorage.getItem("username");
   if (x == null) {
-    document.getElementById("printUsername").innerText = ("Login");
+    document.getElementById("printUsername").innerText = ("Login / Sign Up");
   } else {
     document.getElementById("printUsername").innerText = ("Welcome, " + x);
   }
 
-  function ajax(id) {
-    var url = id ? `https://localhost:5001/api/user/${id}` : 'https://localhost:5001/api/user'
-    fetch(url).then((response) => {
-      response.json().then(display);
-    }, (error) => {
-      console.error(error);
-    })
-  }
 
-  function display(data) {
-    var div = document.querySelector('#userlist');
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+  // function ajax(id) {
+  //   var url = id ? `https://localhost:5001/api/user/${id}` : 'https://localhost:5001/api/user'
+  //   fetch(url).then((response) => {
+  //     response.json().then(display);
+  //   }, (error) => {
+  //     console.error(error);
+  //   })
+  // }
+
+  // function display(data) {
+  //   var div = document.querySelector('#userlist');
+
+
+
+
+
 
   // while (x == null) {
   //   if (location == "index.html"){

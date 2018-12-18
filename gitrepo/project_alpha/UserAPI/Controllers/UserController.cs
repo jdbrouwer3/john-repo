@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 using UserAPI.Models;
+using Newtonsoft.Json.Linq;
 
 namespace UserAPI.Controllers
 {
@@ -13,19 +14,15 @@ namespace UserAPI.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-      public List<User> Users { get; set; }
-
-      public UserController()
+      private static List<User> Users = new List<User>()
       {
-        Users = new List<User>
-        {
-          new User(){username = "Fred", password = "hello"},
-          new User(){username = "John", password = "john"},
-          new User(){username = "KaceyMusgravesFan", password = "kacey"},
-          new User(){username = "JohnnyBGoode", password = "goode"},
-          new User(){username = "BigBadJohn", password = "bad"}
-        };
-      }
+        new User(){username = "Fred", password = "hello"},
+        new User(){username = "John", password = "john"},
+        new User(){username = "KaceyMusgravesFan", password = "tomato"},
+        new User(){username = "JohnnyBGoode", password = "goode"},
+        new User(){username = "BigBadJohn", password = "bad"}
+      };
+
 
         // GET api/values
         [HttpGet]
@@ -50,8 +47,10 @@ namespace UserAPI.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<IEnumerable<User>> Post([FromBody] User value)
         {
+          Users.Add(value);
+          return Users;
         }
 
         // PUT api/values/5

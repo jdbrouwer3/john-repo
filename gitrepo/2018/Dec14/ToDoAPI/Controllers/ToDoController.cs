@@ -14,13 +14,14 @@ namespace ToDoAPI.Controllers
   [ApiController]
   public class ToDoController : ControllerBase
   {
-    private static _todos = new List<Todo>()
+    private static List<Todo> Todos = new List<Todo>()
     {
-      new Todo
-
-
-
-
+      new Todo(){ Text = "the monday todo"},
+      new Todo(){ Text = "the tuesday todo"},
+      new Todo(){ Text = "the wednesday todo"},
+      new Todo(){ Text = "the thursday todo"},
+      new Todo(){ Text = "the friday todo"}
+    };
 
 
       // GET api/values
@@ -42,7 +43,6 @@ namespace ToDoAPI.Controllers
         {
           return NotFound(aoore.Message);
         }
-
       }
 
       // POST api/values
