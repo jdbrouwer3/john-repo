@@ -1,6 +1,6 @@
 'use strict';
 
-export function appGet(url, func) {
+export function appGet(url, func) { 
   let init = {
     method: 'get'
   };

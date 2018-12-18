@@ -4,7 +4,7 @@ export function appGet(url, func) {
   let init = {
     method: 'get'
   };
-  let errorUrl = 'https://localhost:5001/todo/';
+  let errorUrl = 'https://localhost:5001/user/';
 
   let request = new Request(url, init);
 

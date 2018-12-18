@@ -18,13 +18,13 @@ import { appGet, appPost } from "./scripts/ajax.js";
 
 'use strict'
 
-// appGet('https://localhost:5001/api/todo/', (data) => {
-//   document.querySelector('#todolist').innerHTML = data[4].text;
-// });
+appGet('https://localhost:5001/api/todo/', (data) => {
+  document.querySelector('#todolist').innerHTML = data[4].text;
+});
 
-appPost('https://localhost:5001/api/todo', { text: 'the saturday todo'}, (data) => {
-  document.querySelector('#todolist').innerHTML = data[data.length - 1].text;
-})
+// appPost('https://localhost:5001/api/todo', { text: 'the weekday todo'}, (data) => {
+//   document.querySelector('#todolist').innerHTML = data[data.length - 1].text;
+// })
 
 
 
