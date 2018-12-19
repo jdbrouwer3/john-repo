@@ -11,6 +11,31 @@ signUpButton.addEventListener('click', () => {
   });
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // var directAfterSignUp = document.querySelector('#signUpBtn');
 // directAfterSignUp.addEventListener('click', () => {
 //   window.location.replace('login.html');
